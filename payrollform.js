@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded',(event)=>{
             return;
         }
         try{
-            (new EmployeePayrollData()).name=name.value;
+            (new empPayrollData()).name=name.value;
             textError.textContent="";
         }
         catch(e)
@@ -38,7 +38,7 @@ window.addEventListener('DOMContentLoaded',(event)=>{
     {
         let dates= getInputValueById("#day")+" "+getInputValueById("#month")+" "+getInputValueById("#year");
         dates=new Date(Date.parse(dates));
-        (new EmployeePayrollData()).startDate=dates;
+        (new empPayrollData()).startDate=dates;
         dateError.textContent="";
     }
     catch(e)
